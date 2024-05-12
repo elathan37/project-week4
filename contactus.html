@@ -63,25 +63,30 @@
 
     <!-- About Us Form -->
 
-    <form
-      action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
-      method="post"
-      class="row"
-    >
-      <div class="mb-3">
-        <label for="contactUsInput" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="contactUsInput"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="contactUsText" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="contactUsText" rows="3"></textarea>
-      </div>
-    </form>
+    <div class="container-md">
+      <form
+        action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+        method="post"
+        class="row"
+      >
+        <div class="mb-3">
+          <label for="contactUsInput" class="form-label">email address:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="contactUsInput"
+            placeholder="email@somewhere.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="contactUsText" class="form-label">Leave Us A Message! 😊</label>
+          <textarea class="form-control" id="contactUsText" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </form>
+    </div>
 
     <!-- footer -->
     <footer>
