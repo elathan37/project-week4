@@ -121,15 +121,46 @@
                         <form>
                             <div class="row">
                                 <div class="mb-3 col-12">
-                                    <label class="sr-only" for="loginEmail">Name</label>
-                                    <input type="email" class="form-control form-control-sm" placeholder="Enter Name">
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input type="email" class="form-control form-control-sm" id="name"
+                                        placeholder="Enter Name">
                                 </div>
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <label for="tableMembers" class="col-form-label">Number of People</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select name="tableMembers" class="form-select" id="tableMembers">
+                                            <option selected>select</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6">
+                                        <label for="date" class="col-form-label">Date</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="date" class="form-control" id="date" name="date">
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </form>
