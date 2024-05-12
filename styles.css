@@ -10,4 +10,13 @@ text-align: center;
 
 footer {
 color: #640D6B;
+background-image: linear-gradient(to right, #E1AFD1, #AD88C6, #7469B6 );
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #E1AFD1, #AD88C6, #7469B6 );
+}
+
+.carousel {
+    padding: 20px;
 }

@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm  navbar-dark">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeeNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
+            <div class="collapse navbar-collapse" id="coffeeNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active text-black" href="#"><i
                                 class="fa-solid fa-house fa-lg"></i>
@@ -26,11 +26,20 @@
                     <li class="nav-item"><a class="nav-link text-black" href="aboutus.html"><i
                                 class="fa-solid fa-info fa-lg"></i>
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link text-black" href="#"><i class="fa-solid fa-mug-saucer"></i>Products</a>
+                    <li class="nav-item"><a class="nav-link text-black" href="#"><i
+                                class="fa-solid fa-mug-saucer"></i>Products</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-black" href="contactus.html"><i
-                                class="fa-solid fa-bars"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#"><i class="fa-solid fa-bars"></i>
+                            Menu
+                        </a>
+                    </li>
                 </ul>
+                <span class="navbar-text ms-auto text-black">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#reservationModal"><i
+                            class="fa-solid fa-chair"></i>
+                        Reserve a Table
+                    </a>
+                </span>
 
             </div>
         </div>
@@ -85,46 +94,97 @@
         </div>
     </section>
 
-    <!-- table -->
-    <section class="row row-content">
-        <div class="col-sm-9">
-            <h2>Menu</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead class="bg-primary text-light">
-                        <tr>
-                            <th>Hot Coffee</th>
-                            <th>Cold Coffee</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-primary ">
-                        <tr>
-                            <th>Hot Coffee 1</th>
-                            <th>Cold Coffee 1</th>
-                            <td>2.00</td>
-                        </tr>
-                        <tr>
-                            <th>Hot Coffee 2</th>
-                            <th>Cold Coffee 2</th>
-                            <td>5.00</td>
-                        </tr>
-                        <tr>
-                            <th>Hot Coffee 3</th>
-                            <th>Cold Coffee 3</th>
-                            <td>3.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h2>About Us</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptatum rerum reiciendis beatae
+                sapiente facere eaque ducimus fuga incidunt provident odit reprehenderit, quaerat minima explicabo,
+                fugit magnam ab maxime repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                voluptatum rerum reiciendis beatae
+                sapiente facere eaque ducimus fuga incidunt provident odit reprehenderit, quaerat minima explicabo,
+                fugit magnam ab maxime repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                voluptatum rerum reiciendis beatae
+                sapiente facere eaque ducimus fuga incidunt provident odit reprehenderit, quaerat minima explicabo,
+                fugit magnam ab maxime repellendus.
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Table Reservation modal -->
+    <div class="modal fade" id="reservationModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Table</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginEmail">Name</label>
+                                    <input type="email" class="form-control form-control-sm" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- table -->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-9">
+                <h2>Menu</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="bg-primary text-light">
+                            <tr>
+                                <th>Hot Coffee</th>
+                                <th>Cold Coffee</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-primary ">
+                            <tr>
+                                <th>Hot Coffee 1</th>
+                                <th>Cold Coffee 1</th>
+                                <td>2.00</td>
+                            </tr>
+                            <tr>
+                                <th>Hot Coffee 2</th>
+                                <th>Cold Coffee 2</th>
+                                <td>5.00</td>
+                            </tr>
+                            <tr>
+                                <th>Hot Coffee 3</th>
+                                <th>Cold Coffee 3</th>
+                                <td>3.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-6 col-sm-5 text-center">
+                <div class="col col-sm-5 text-center d-flex justify-content-between">
                     <h5>Social</h5>
                     <a href="http://instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
                     <a href="http://facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
